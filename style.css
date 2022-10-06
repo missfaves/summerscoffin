@@ -2,6 +2,7 @@
 html {text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
+
  }
 
 .fade {
@@ -78,9 +79,17 @@ html {text-align: center;
 
 
 
-body{background-image: url("bkg.jpg");  background-repeat: no-repeat;
+body{background-image: url(bkg.jpg);  
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center; }
+  background-position: right; 
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+
+}
 
 .logo {border-radius: 50%; width:100px;}
 
