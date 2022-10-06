@@ -116,7 +116,7 @@ button { width:100%;
   button:hover {
     background-color: rgba(0,0,0,0); /* Green */
     border: 2px solid #FA6D77;
-    color:#FA6D77;
+    color:#ffffff;
   }
 
 .flex {
