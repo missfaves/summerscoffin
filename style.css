@@ -1,9 +1,12 @@
 
-html {text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
+html {text-align: center;  font-family: 'Montserrat', sans-serif;  
 
  }
+
+ button, p{
+  font-size: 1.2em
+}
+
 
 .fade {
 
@@ -67,8 +70,8 @@ html {text-align: center;
   width: 100%;
   position: fixed;
   overflow: auto;
-  top: 0px;
-  left: 0px;
+  top: 0em;
+  left: 0em;
   background: rgba(255,162,172,0.3); /*can be anything, of course*/
   transition-duration: 0.4s;
 }
@@ -91,13 +94,13 @@ body{background-image: url(bkg.jpg);
 
 }
 
-.logo {border-radius: 50%; width:100px;}
+.logo {border-radius: 50%; width:7em;}
 
 
-header{margin-top:30px; margin-bottom:30px;}
+header{margin-top:2em; margin-bottom:2em;}
 
-.button-container { margin: 0 auto; max-width: 700px;}
-.link-container { margin: 0 auto; max-width: 400px;}
+.button-container { margin: 0 auto; max-width: 56em;}
+.link-container { margin: 0 auto; max-width: 40em;}
 
 .white{color:white}
 .dark{color:#021D32}
@@ -106,15 +109,15 @@ header{margin-top:30px; margin-bottom:30px;}
 
 
 button { width:100%;
-  border: 2px solid #FA6D77;
-  border-radius: 25px;
+  border: 0.2em solid #FA6D77;
+  border-radius: 2em;
   background-color: #FA6D77; /* Green */
-  padding: 15px 32px;
+  padding: 1em 2em;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 18px;
-  margin:5px;
+
+  margin:0.2em;
   transition-duration: 0.4s;
   font-family: 'Quicksand', sans-serif;
   font-weight: 900;
@@ -124,7 +127,7 @@ button { width:100%;
   
   button:hover {
     background-color: rgba(0,0,0,0); /* Green */
-    border: 2px solid #FA6D77;
+    border: 0.2em solid #FA6D77;
     color:#ffffff;
   }
 
@@ -135,15 +138,15 @@ button { width:100%;
 
 .flex > div {
 
-  width: 60px;
-  margin: 5px;
+  width: 4em;
+  margin: 0.3em;
   text-align: center;
-  line-height: 75px;
-  font-size: 30px;
+  line-height: 5em;
+  font-size: 2em;
 }
 
 footer {
-	width: 200px;	height: 50px;
+	width: 12em;	height: 3em;
 	position: absolute;
 
 	bottom: 0;
@@ -155,5 +158,5 @@ footer {
 
 
 i:hover{
-  font-size: 35px;
+  font-size: 2.2em;
 }
