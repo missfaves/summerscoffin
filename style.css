@@ -39,13 +39,9 @@ html {text-align: center;  font-family: 'Inter', sans-serif;  letter-spacing: 0.
   overflow: auto;
   top: 0em;
   left: 0em;
-  background: rgba(255,162,172,0.1); /*can be anything, of course*/
-  transition-duration: 0.4s;
+
 }
 
-.overlay:hover{
-  background: rgba(251,233,178,0); /*can be anything, of course*/
-}
 
 
 
