@@ -30,32 +30,23 @@ html {text-align: center;  font-family: 'Inter', sans-serif;  letter-spacing: 0.
 @keyframes shake {  0% { transform:  rotate(0deg); }  2% { transform: rotate(-0.5deg); }  4% { transform:  rotate(0deg); }  7% { transform:  rotate(0.5deg); }  10% { transform:  rotate(0deg); }  14% { transform: rotate(-0.5deg); }  18% { transform:  rotate(0deg); }}
 
 
- 
- .overlay {
-  z-index: 1;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  overflow: auto;
-  top: 0em;
-  left: 0em;
-
-}
+div.dropnav { opacity: 0.01; max-height: 0px; transition: opacity 1s, max-height 0s 1s; }
+div.navwrapper:hover div.dropnav { opacity: 1; max-height: 999px; transition: opacity 1s, max-height 0s; }
 
 
-
-
-body{background-image: url(bkg.jpg);  
-  background-repeat: no-repeat;
+body{  background-repeat: no-repeat;
+  background-color: #5A5379;
   background-attachment: fixed;
   background-position: right; 
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
+  -o-background-size: cover;}
 
-
+.body-index{background-image: url(bkg.jpg);
 }
+.body-links{background-image: url(bkg.jpg);}
+.body-spicy{background-image: url(spicy.jpg);}
 
 .logo {border-radius: 50%; width:12em;}
 .watermark { width:20em;}
@@ -105,26 +96,37 @@ i{  font-size: 1.6em;  text-shadow: 2px 2px rgba(2,20,25,0.5);}
 i:hover{  font-size: 1.7em;}
 
 @media (max-height:1000px) { 
-  button { width:100%;
+  button { width:75%;
     font-family: 'Inter', sans-serif; 
-    border: 2px solid #FA6D77;
+    border: 3px solid #FA6D77;
     border-radius: 2em;
     background-color: #FA6D77; /* Green */
     padding: 15px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size:1em;
-    letter-spacing: 0.1em;
+    font-size:1.1em;
+    letter-spacing: 0.15em;
     margin: 4px;
     transition-duration: 0.4s;
     cursor: pointer;
   }
+  .little{
+    width:auto;
+    border: 2px solid white;
+    background-color: white; /* Green */
+  }
 
   button:hover {
     background-color: rgba(2,20,25,0.5); /* Green */
-    border: 2px solid #FA6D77;
+    border: 3px solid #FA6D77;
     color:#ffffff;
+  }
+  .little:hover{
+    border: 2px solid white;
+    background-color: white; /* Green */
+    color:rgba(2,20,25,1);
+    transform: translateX(-5px);
   }
  
   i{  font-size: 30px;}
