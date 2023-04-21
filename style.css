@@ -46,7 +46,7 @@ body{  background-repeat: no-repeat;
 .body-index{background-image: url(bkg.jpg);
 }
 .body-links{background-image: url(bkg.jpg);}
-.body-spicy{background-image: url(spicy.jpg);}
+.body-spicy{background-image: url(spicy.jpg);  background-position: left;}
 
 .logo {border-radius: 50%; width:12em;}
 .watermark { width:20em;}
