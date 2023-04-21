@@ -86,6 +86,19 @@ button { width:100%;
     color:#ffffff;
   }
 
+  .little{
+    width:auto;
+    border: 0.2em solid white;
+    background-color: white; /* Green */
+  }
+
+  .little:hover{
+    border: 0.2em solid white;
+    background-color: white; /* Green */
+    color:rgba(2,20,25,1);
+    transform: translateX(-5px);
+  }
+
 .flex { display: flex;  flex-wrap: nowrap;}
 
 .flex > div {  width: 4em;  margin: 0.3em;  text-align: center;  line-height: 3em;  font-size: 2em;}
