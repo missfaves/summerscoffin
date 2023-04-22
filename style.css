@@ -96,6 +96,7 @@ button { width:100%;
 
 .svg{max-height: 1.1em;
   vertical-align: -0.16em;
+  display:inline-block;
 }
   
   button:hover {
