@@ -94,10 +94,12 @@ button { width:100%;
   cursor: pointer;
 }
 
-.svg{max-height: 1.1em;
-  vertical-align: -0.16em;
+.svg{ font-size: 1.1em;
+
   display:inline-block;
+  text-shadow: none;
 }
+.svg:hover{ font-size: 1.1em;}
   
   button:hover {
     background-color: rgba(0,0,0,0); /* Green */
