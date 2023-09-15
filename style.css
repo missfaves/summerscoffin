@@ -58,9 +58,9 @@ body{  background-repeat: no-repeat;
   -moz-background-size: cover;
   -o-background-size: cover;}
 
-.body-index{background-image: url(bkg2.jpg);
+.body-index{background-image: url(bkgs/bkg2.jpg);
 }
-.body-links{background-image: url(bkg1.jpg);}
+.body-links{background-image: url(bkgs/bkg1.jpg);}
 .body-spicy{background-image: url(spicy.jpg);  background-position: left;}
 
 .logo {border-radius: 50%; width:12em;}
