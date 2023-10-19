@@ -1,13 +1,16 @@
 
-html {text-align: center;  font-family: 'Inter', sans-serif;  letter-spacing: 0.2em;}
+
+a{text-decoration: none;}
+html, body{height:100%; background-color: #FFFFFF;}
+html {text-align: center;  font-family: 'Inter', sans-serif;  letter-spacing: 0.2em; }
 
 .fade {  -webkit-animation: fadein 2s;    -moz-animation: fadein 2s;    -ms-animation: fadein 2s;      -o-animation: fadein 2s;           animation: fadein 2s;}
 .fadeslow {  -webkit-animation: fadein 4s;    -moz-animation: fadein 4s;    -ms-animation: fadein 4s;      -o-animation: fadein 4s;           animation: fadein 4s;}
 .slideL{-webkit-animation: slideL 2s;    -moz-animation: slideL 2s;    -ms-animation: slideL 2s;      -o-animation: slideL 2s;           animation: slideL 2s;}
 .slideR{-webkit-animation: slideR 2s;    -moz-animation: slideR 2s;    -ms-animation: slideR 2s;      -o-animation: slideR 2s;           animation: slideR 2s;}
 
-@keyframes slideL {  0% {  transform: translateX(-3em);  opacity: 0; } 100% {   transform: translateX(0);   opacity: 1; }}
-@keyframes slideR {  0% {  transform: translateX(3em);  opacity: 0; } 100% {   transform: translateX(0);   opacity: 1; }}
+@keyframes slideL {  0% {  transform: translateX(-1em);  opacity: 0; } 100% {   transform: translateX(0);   opacity: 1; }}
+@keyframes slideR {  0% {  transform: translateX(1em);  opacity: 0; } 100% {   transform: translateX(0);   opacity: 1; }}
 
 
 
@@ -49,25 +52,21 @@ div.dropnav { opacity: 0.01; max-height: 0px; transition: opacity 1s, max-height
 div.navwrapper:hover div.dropnav { opacity: 1; max-height: 999px; transition: opacity 1s, max-height 0s; }
 
 
-body{  background-repeat: no-repeat;
-  background-color: #5A5379;
-  background-attachment: fixed;
-  background-position: right; 
+.art, .spicy{  background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;}
-
-.body-index{background-image: url(bkg2.jpg);
+  -o-background-size: cover;
 }
-.body-links{background-image: url(bkg1.jpg);}
-.body-spicy{background-image: url(spicy.jpg);  background-position: left;}
 
-.logo {border-radius: 50%; width:12em;}
+.art{background-image: url(bkg1.jpg);  background-color:#213955; background-position: right; }
+.spicy{background-image: url(spicy.jpg);  background-color:#93749C; background-position: left;}
+
+.logo {border-radius: 50%; width:13em;}
 .watermark { width:20em;}
 
 
-header{margin-top:2em; margin-bottom:2em;}
+header{padding-top:2em; padding-bottom:2em;}
 
 .button-container { margin: 0 auto; max-width: 56em;}
 .link-container { margin: 0 auto; max-width: 40em;}
@@ -80,9 +79,7 @@ p{  font-size:1.9em;  text-shadow: 2px 2px rgba(2,20,25,0.5);}
 
 button { width:100%;
   font-family: 'Inter', sans-serif;
-  border: 0.2em solid #FA6D77;
   border-radius: 2em;
-  background-color: #FA6D77; /* Green */
   padding: 0.8em 2em;
   text-align: center;
   text-decoration: none;
@@ -94,6 +91,9 @@ button { width:100%;
   cursor: pointer;
 }
 
+.pink{border: 0.2em solid #FA6D77;background-color: #FA6D77;}
+.vip {border: 0.2em solid white;background-color: white;}
+
 .svg{ font-size: 1.1em;
 
   display:inline-block;
@@ -101,7 +101,7 @@ button { width:100%;
 }
 .svg:hover{ font-size: 1.1em;}
   
-  button:hover {
+  .button:hover {
     background-color: rgba(0,0,0,0); /* Green */
     border: 0.2em solid #FA6D77;
     color:#ffffff;
@@ -111,6 +111,7 @@ button { width:100%;
     width:auto;
     border: 0.2em solid white;
     background-color: white; /* Green */
+    margin:2em 2em 2em 2em;
   }
 
   .little:hover{
@@ -125,16 +126,15 @@ button { width:100%;
 .flex > div {  width: 4em;  margin: 0.3em;  text-align: center;  line-height: 3em;  font-size: 2em;}
 span {font-family:Arial, Helvetica, sans-serif}
 
-i{  font-size: 1.6em;  text-shadow: 2px 2px rgba(2,20,25,0.5);}
+.socials{  font-size: 1.6em;  text-shadow: 2px 2px rgba(2,20,25,0.5);}
 
-i:hover{  font-size: 1.7em;}
 
 @media (max-height:1000px) { 
   button { width:75%;
     font-family: 'Inter', sans-serif; 
-    border: 3px solid #FA6D77;
+
     border-radius: 2em;
-    background-color: #FA6D77; /* Green */
+
     padding: 15px 30px;
     text-align: center;
     text-decoration: none;
@@ -145,10 +145,15 @@ i:hover{  font-size: 1.7em;}
     transition-duration: 0.4s;
     cursor: pointer;
   }
+
+  .pink{border: 3px solid #FA6D77;}
+  .vip{border: 3px solid #ffffff;  }
+
   .little{
     width:auto;
     border: 2px solid white;
     background-color: white; /* Green */
+
   }
 
   button:hover {
@@ -163,8 +168,41 @@ i:hover{  font-size: 1.7em;}
     transform: translateX(-5px);
   }
  
-  i{  font-size: 30px;}
 
-i:hover{  font-size: 32px;}
+
 p{  font-size:16px;}
 }
+
+body { margin: 0; padding: 0; }
+
+h1, .material-symbols-outlined{ font-size:10vw;
+color:#FFFFFF;
+font-weight:900;
+text-decoration: none;
+vertical-align: middle;
+margin-top:44vh;}
+
+
+.page{
+  display:inline-block;
+  height:100%;
+  vertical-align: middle;
+}
+
+#footer{
+    position: fixed;
+    bottom: 0;
+}
+
+.flex-container {
+  display: flex;
+  height:100%;
+}
+
+.flex-child {
+  flex: 1;
+}  
+
+.flex-child:first-child {
+  margin-right: 0.5vw;
+} 
